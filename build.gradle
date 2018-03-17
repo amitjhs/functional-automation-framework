@@ -1,0 +1,20 @@
+group 'com.automationframework'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'maven'
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.testng', name: 'testng', version: '6.14.2'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.4.0'
+    compile group: 'com.google.gdata', name: 'core', version: '1.47.1'
+    compile group: 'net.sourceforge.jexcelapi', name: 'jxl', version: '2.6.12'
+}
